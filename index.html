@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DASIG FM RADIO</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+    color: #333;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  h1 {
+    color: #d35400;
+    text-shadow: 1px 1px 2px #fff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 1.1em;
+    margin: 10px 0 20px;
+  }
+  img.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+  }
+  audio {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #555;
+  }
+  button.share-btn {
+    background-color: #d35400;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  button.share-btn:hover {
+    background-color: #e67e22;
+  }
+</style>
+</head>
+<body>
+
+<!-- Station Logo -->
+<img src="dasigradiologo.png" alt="DASIG FM RADIO Logo" class="logo">
+
+<h1>DASIG FM RADIO</h1>
+<p>Paminawa ang pinakabag-ong Christian songs, inspiring talks, ug uplifting messages nga makapadasig sa imong adlaw!</p>
+
+<!-- Audio Stream -->
+<audio controls autoplay>
+  <source src="https://dasigradiocebu.radiostream123.com:1234/stream" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="footer">
+  Visit us anytime sa imong browser o i-add kini sa imong Home Screen para dali ra nimo ma-access.
+</div>
+
+<button class="share-btn" onclick="navigator.share({title: 'DASIG FM RADIO', url: window.location.href})">
+  Share This Radio
+</button>
+
+</body>
+</html>
